@@ -64,7 +64,7 @@ public class kafkajrBroker {
             if(args[i].equals("--port") && i + 1 < args.length){
                 port = Integer.parseInt(args[i + 1]);
             } else if(args[i].equals("--data-dir") && i + 1 < args.length){
-                dataDir = args[i];
+                dataDir = args[i+1];
             }
         }
         kafkajrBroker broker = new kafkajrBroker(port, dataDir);
